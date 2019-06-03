@@ -1,0 +1,9 @@
+body {
+  font-family: 'Trebuchet MS';
+  margin: 0;
+  padding: 0;
+}
+
+label {
+  font-weight: bold;
+}
