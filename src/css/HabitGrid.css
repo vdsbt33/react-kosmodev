@@ -1,0 +1,15 @@
+/* Habit */
+#habitgrid {
+  border-collapse: collapse;
+  border: 1px solid #00000022;
+  width: 100%;
+}
+
+#habitgrid th {
+  padding: 2px;
+}
+
+#habitgrid td {
+  padding: 2px;
+  border: 1px solid #00000022;
+}
