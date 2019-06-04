@@ -1,49 +1,26 @@
-import React, { Component } from 'react';
-import Habits from './components/Habits';
-
+import React from 'react';
+import logo from './logo.svg';
 import './App.css';
 
-class App extends Component {
-  state = {
-    habits: [
-      {
-        kha_identi: 1,
-        kha_name: 'Learn React',
-        kha_descri: 'description',
-        kha_streak: 1,
-        kha_crdate: Date.now(),
-        kha_eddate: null,
-        kha_active: true
-      }, 
-      {
-        kha_identi: 2,
-        kha_name: 'Do stuff',
-        kha_descri: '',
-        kha_streak: 5,
-        kha_crdate: Date.now(),
-        kha_eddate: null,
-        kha_active: false
-      }, 
-      {
-        kha_identi: 3,
-        kha_name: 'Dont react',
-        kha_descri: 'wa wawawawa wa wawa',
-        kha_streak: 11,
-        kha_crdate: Date.now(),
-        kha_eddate: Date.now(),
-        kha_active: true
-      }
-    ]
-  }
-
-  render() {
-    return (
+function App() {
+  return (
     <div className="App">
-      <h1>App</h1>
-      <Habits habits={this.state.habits} />
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
     </div>
-    );
-  }
+  );
 }
 
 export default App;
