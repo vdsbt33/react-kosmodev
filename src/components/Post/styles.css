@@ -6,28 +6,58 @@
 }
 
 .post {
-  margin-bottom: 6px;
+  position: relative;
 }
 
 .post::after {
   content: '';
-  width: 100%;
+  width: 100vw;
   height: 2px;
   background-color: #00000022;
   display: block;
 }
 
 .post .postAction {
-  width: 10%;
-  min-width: 130px;
-  height: 40px;
+  width: 100px;
+  height: 100%;
   display: inline-block;
-  background-color: #66f;
+  background-color: rgb(0, 0, 0, 0.1);
+  position: absolute;
+  display: flex;
+  align-items: center;
+}
+
+.post .postAction .actionButtons {
+  width: 100%;
+  text-align: center;
+}
+
+.post .postAction .actionButtons a {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.301);
+  border-radius: 50%;
+  font-size: 20px;
+  line-height: 0;
+  margin: 0 3px;
+
+  transition: 0.09s ease-out color;
+}
+
+.post .postAction .actionButtons .plus:hover {
+  color: rgb(82, 252, 133);
+}
+
+.post .postAction .actionButtons .minus:hover {
+  color: rgb(241, 87, 87);
 }
 
 .post .postContent {
-  width: 80%;
+  width: 80vw;
   display: inline-block;
+  margin-left: 95px;
   padding: 0 12px;
   display: relative;
 }

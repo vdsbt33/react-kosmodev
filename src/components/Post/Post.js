@@ -9,7 +9,10 @@ export class Post extends Component {
     return (
       <div className="post">
         <div className="postAction">
-
+          <div className="actionButtons">
+            <a href="javascript:void(0)" class="plus"><i class="fas fa-arrow-circle-up"></i></a>
+            <a href="javascript:void(0)" class="minus"><i class="fas fa-arrow-circle-down"></i></a>
+          </div>
         </div>
         <div className="postContent">
           <a href="#">
